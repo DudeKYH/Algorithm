@@ -5,6 +5,9 @@ function sumArr(num, arr, set) {
             sum += arr[(start + index) % arr.length];
         }
         set.add(sum);
+        
+        if(num === arr.length)
+            break;
     }
 }
 
